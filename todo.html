@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="assets/boot/css/bootstrap.rtl.css" />
+    <style>
+      .ani {
+        transition: all 0.5s ease;
+      }
+      .ani:hover {
+        transform: scale(1.2);
+      }
+      .ani-body:hover .ani:not(:hoxver) {
+        transform: scale(0.9);
+      }
+      .shadow-h-f:hover {
+        box-shadow: 1rem 0.5rem 2rem rgb(255, 166, 0);
+      }
+      .shadow-h-t:hover {
+        box-shadow: 1rem 0.5rem 2rem #14952a;
+      }
+
+      .round--todo {
+        border-radius: 0.4rem;
+      }
+      body {
+        font-family: "Dancing Script", cursive;
+        font-family: "Nova Square", sans-serif;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nova+Square&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/boot/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/todo.js" defer></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div
+        class="row d-flex ani-body justify-content-center gap-2 shadow p-3 align-items-center mt-5"
+        id="root"
+      ></div>
+    </div>
+  </body>
+</html>

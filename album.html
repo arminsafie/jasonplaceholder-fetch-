@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>doc</title>
+    <link rel="stylesheet" href="assets/boot/css/bootstrap.rtl.css" />
+    <style>
+      .ani {
+        transition: all 0.5s;
+        border-radius: 0.6rem;
+      }
+      .ani:hover {
+        transform: scale(1.14);
+      }
+      .ani-body:hover .ani:not(:hover) {
+        transform: scale(0.9);
+        margin: 0;
+      }
+      body {
+        font-family: "Dancing Script", cursive;
+        font-family: "Nova Square", sans-serif;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nova+Square&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/boot/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/album.js" defer></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row ani-body d-flex justify-content-center" id="root"></div>
+    </div>
+  </body>
+</html>
